@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <!-- TODO: Update blank fragment layout -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constrainedWidth="false">
+
+    <ProgressBar
+        android:id="@+id/water_progress"
+        android:layout_width="265dp"
+        android:layout_height="287dp"
+
+        android:indeterminateOnly="false"
+        android:maxWidth="100dp"
+        android:minWidth="50dp"
+        android:progressDrawable="@drawable/circle"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/water_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/water_progress"
+        app:layout_constraintEnd_toEndOf="@+id/water_progress"
+        app:layout_constraintStart_toStartOf="@+id/water_progress"
+        app:layout_constraintTop_toTopOf="@+id/water_progress" />
+
+    <Button
+        android:id="@+id/incButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="incAction"
+        android:text="+ 10%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/water_progress"
+        app:layout_constraintTop_toBottomOf="@+id/water_progress" />
+
+    <Button
+        android:id="@+id/decButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:onClick="decAction"
+        android:text="- 10%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/water_progress"
+        app:layout_constraintTop_toBottomOf="@+id/water_progress" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="28dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/add_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

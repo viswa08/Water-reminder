@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_fragment"
+        android:enabled="true"
+        android:icon="@drawable/icon_3"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/journal_fragment"
+        android:enabled="true"
+        android:icon="@drawable/icon_2"
+        android:title="@string/journal" />
+    <item
+        android:id="@+id/profile_fragment"
+        android:enabled="true"
+        android:icon="@drawable/icon_1"
+        android:title="@string/profile" />
+
+</menu>
